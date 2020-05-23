@@ -127,6 +127,7 @@ a {
     .content {
         text-align: center;
         padding: 30px 5px;
+        margin-top: 50px;
     }
     .content-title h1 {
         font-size: 30px;
@@ -138,10 +139,11 @@ a {
         font-size: 20px;
     }
     .image {
-        max-width: 400px;
+        max-width: 250px;
     }
     .goto {
         margin-top: 20px;
         display: block;
+        margin-bottom : 40px;
     }
 }
