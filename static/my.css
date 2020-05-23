@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-image: url(Background.png);
     background-repeat: no-repeat;
@@ -9,8 +13,9 @@ a {
     text-decoration: none;
 }
 
-.clear {
-    float: none;
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .header {
@@ -26,6 +31,7 @@ a {
     color: #f5ac46ff;
     font-family: 'Cabin', sans-serif;
     font-size: 30px;
+    letter-spacing: 1px;
 }
 
 .arby {
@@ -53,7 +59,7 @@ a {
 .content {
     font-family: 'Cabin', sans-serif;
     height: 300px;
-    padding: 0px 120px;
+    padding: 30px 120px;
     margin-top: 10px;
 }
 
@@ -82,7 +88,60 @@ a {
     cursor: pointer;
 }
 
-.image {
-    max-width:500px;
+.goto {
+    display: none;
 }
+
+.image {
+    max-width: 500px;
+}
+
+
+/* Responsive */
+
+@media (max-width:1000px) {
+    body {
+        background-size: 280px;
+    }
+    .header {
+        padding-right: 60px;
+    }
+    .image {
+        max-width: 400px;
+    }
+}
+
+@media (max-width:670px) {
+    body {
+        background-size: 150px;
+    }
+    .header {
+        padding: 30px 50px
+    }
+    .header-left span {
+        font-size: 20px;
+    }
+    .header-right {
+        display: none
+    }
+    .content {
+        text-align: center;
+        padding: 30px 5px;
+    }
+    .content-title h1 {
+        font-size: 30px;
+    }
+    .btn-submit {
+        width: 100%;
+        border-radius: 10px;
+        margin: 1px;
+        font-size: 20px;
+    }
+    .image {
+        max-width: 400px;
+    }
+    .goto {
+        margin-top: 20px;
+        display: block;
+    }
 }
